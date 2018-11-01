@@ -1,0 +1,35 @@
+﻿@model string
+@{
+    ViewBag.Title = "Doctors page";
+    Layout = "~/Areas/admin/Views/adminLayout.cshtml";
+}
+<link href="~/Content/themes/base/all.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Areas/Admin/js/jtable/jquery.jtable.min.js"></script>
+<link href="~/Areas/Admin/js/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
+<link href="~/Content/validationEngine.jquery.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.validationEngine.js"></script>
+<script src="~/Scripts/jquery.validationEngine-ar.js"></script>
+<script src="~/Areas/Admin/js/doctors.js"></script>
+<h2 class="pageHeader">صفحة الاطباء</h2>
+<div class="container-fluid">
+    <div class="filtering">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>اسم الطبيب:</label>
+                 <input class="form-control" type="text" name="doctorName" id="docName" @if (Model == "noProfile") { Write("disabled"); }/>
+            </div>
+            <label>تاريخ التسجيل:</label> 
+            <input class="form-control" type="date" name="dateOfregister" id="dateOfregister" />
+            <button type="submit" id="LoadRecordsButton" class="btn btn-danger"><i class="fa fa-search"></i> ابحث</button>
+        </form>
+    </div>
+    <div id="doctors" data-model="@Model">
+
+    </div>
+</div>
+<!--this is hidden modal for viewing doctor details,it will show then user click on show button details-->
+@{Html.RenderPartial("doctorDetailsModal");}
+<!--this is hidden modal for sending email to doctor,it will show then user click on show send email button-->
+@{Html.RenderPartial("sendEmailForm");}
+

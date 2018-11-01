@@ -1,0 +1,36 @@
+﻿@{
+    string lang = Html.getCurrentlanguage();
+}
+<meta charset="utf-8">
+<!--first mobile meta-->
+<meta name="viewport" content="width=device-width,intial-scale=1" />
+<meta name="description" content="@Resource1.metaDescription" />
+<meta name="keywords" content="@Resource1.metaKeywords" />
+<!--IE compatibility meta-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="true">
+<!--[if It IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="images/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--for internet explorer to understand bootstrap
+i can download this file directlly but instead we
+cdn as source for these filles-->
+<link rel='stylesheet' href='~/css/bootstrap.css' />
+@if (lang == "ar")
+{<link rel='stylesheet' href='~/css/bootstrap-ar.css' />}
+<link rel="stylesheet" href="~/css/font-awesome.min.css">
+<link href="~/Areas/users/css/style.css" rel="stylesheet" />
+<link href="~/css/commonDoctorsAndUsers.css" rel="stylesheet" media="all" />
+<link href="~/Areas/users/css/default-theme.css" rel="stylesheet"/>
+<script src="~/Scripts/jquery-1.12.4.min.js"></script>
+<link href="~/css/commonMediaDoctorsAndUsers.css" rel="stylesheet" media="all" />
+<link href="~/Areas/users/css/media_mobile.css" rel="stylesheet" media="all"/>
+@if (lang == "en")
+{
+ <link href="~/Areas/users/css/styleEng.css" rel="stylesheet" />
+}
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/Areas/users/js/extension.js"></script>
+<script src="~/Areas/users/js/mainPage.js"></script>

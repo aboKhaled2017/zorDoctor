@@ -1,0 +1,66 @@
+﻿@model adviceCard
+@{
+    string likeClass = (User.Identity.IsAuthenticated&&Model.isLiked) ? "fa-heart" : "fa-heart-o";
+    string likeTitle = (!Model.isLiked) ? "like this advice" : "dislike this advice";
+}
+<div class="adviceRecord row">
+    <div class="col-lg-3 col-sm-4 col-xs-5" style="padding: 0;position: relative;">
+        <div class="card">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 imgDiv">
+                        <a href="/@Html.getDefaultPathFor("users","doctor")/@Model.doctorID">
+                            <img src="~/Areas/doctors/doctorImages/@Model.image"
+                                 class="img-responsive img-thumbnail img-circle"
+                                 alt="@Model.name" />
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-xs-12 text-left">
+                        <div class="name head"><i class="fa fa-user-md"></i> @Model.name</div>
+                        <div class="speciality head" title="@Model.speciality"><i class="fa fa-stethoscope"></i> @Model.speciality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-9 col-sm-8 col-xs-7">
+        <div class="container-fluid content-container">
+            <div class="row">
+                <div>
+                    <div class="advice pull-right">
+                        @Model.content
+                    </div>
+                </div>
+                <div class="col-xs-12 notifications">
+                    <i class="fa fa-comments-o fa-lg"
+                       data-type="comments"
+                       data-id="@Model.id"
+                       data-commentscount="@Model.comments"
+                       data-iscommentedbefore="@Model.isPatientCommented"
+                       id="showComments"></i>
+                    <i title="@Resource1.shareAdviceTitle"
+                        class="fa fa-share fa-lg"
+                        data-id="@Model.id" 
+                        data-content="@Model.content"
+                        data-doctorName="@Model.name"
+                        data-type="share"></i>
+                    <i class="fa fa-eye fa-lg"></i>
+                    <i title="@likeTitle" class="fa fa-lg @likeClass" data-id="@Model.id" data-type="like"></i>
+                    <div class="tooltip">
+                        <span class="tooltiptext tooltip-top">
+                            <a href="/@Html.getDefaultPathFor("users","patient")/login">@Resource1.login</a>
+                             @Resource1.or 
+                            <a href="/@Html.getDefaultPathFor("users","patient")/register">@Resource1.signUp</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 notf-number">
+                    <div class="comments">@Model.comments</div>
+                    <div class="share">@Model.shares</div>
+                    <div>@Model.seens</div>
+                    <div class="like">@Model.likes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@model Tuple<string,string,string[]>
+<html>
+<head>
+    <title>رسالة من ادراة موقع زور دكتور</title>
+    <script src="~/js/bootstrap.min.js"></script>
+    <link href="~/css/bootstrap-ar.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">مرحبا بك @Model.Item1</div>
+            <div class="panel-body">
+                @Model.Item2
+            </div>
+            <div class="panel-footer">
+                <h5>يمكنك التواصل مع مسؤلى موقع زور دكتور على الارقام الاتية</h5>
+                <ul>
+                    @foreach (var phoneNumber in Model.Item3)
+                    {
+                        <li>@phoneNumber</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

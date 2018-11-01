@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="LocalSqlServer-Web.config Connection String" description="LocalSqlServer Connection String used in web.config by the application to access the database." defaultValue="server=.;database=tabeebek;Integrated Security=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\zoorDoctor\\tabeeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalSqlServer']/@connectionString" />
+  </parameter>
+  <parameter name="tabeebekEntities-Web.config Connection String" description="tabeebekEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=tabeebek;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\zoorDoctor\\tabeeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='tabeebekEntities']/@connectionString" />
+  </parameter>
+  <parameter name="tabeebekEntities_DatabasePublish-Web.config Connection String" description="tabeebekEntities_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="tabeebekEntities_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="F:\\zoorDoctor\\tabeeb\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='tabeebekEntities_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

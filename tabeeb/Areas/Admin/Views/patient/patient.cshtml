@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "صفحة المستخدمين";
+    Layout = "~/Areas/admin/Views/adminLayout.cshtml";
+}
+<link href="~/Content/themes/base/all.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Areas/Admin/js/jtable/jquery.jtable.min.js"></script>
+<link href="~/Areas/Admin/js/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
+<link href="~/Content/validationEngine.jquery.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.validationEngine.js"></script>
+<script src="~/Scripts/jquery.validationEngine-ar.js"></script>
+<script src="~/Areas/Admin/js/patients.js"></script>
+<div class="container">
+    <h2 class="pageHeader">صفحة المستخدمين</h2>
+    <div id="patients" data-model="@Model">
+
+    </div>
+</div>
+ 
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jquery.validationEngine</id>
+    <version>2.6.2</version>
+    <title>Inline Form Validation Engine 2.6</title>
+    <authors>Cedric Dugas, Olivier Refalo</authors>
+    <owners>Cedric Dugas, Olivier Refalo</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>jQuery validation engine is a Javascript plugin aimed at the validation of form fields in the browser (IE 6-8, Chrome, Firefox, Safari, Opera 10). The plugin provides visually appealing prompts that grab user attention on the subject matter.
+
+Validations range from email, phone, and URL, to more complex calls such as ajax processing or custom javascript functions. Bundled with many locales, the error prompts can be translated into the language of your choice.</description>
+    <summary />
+    <copyright>Copyright(c) 2011 Cedric Dugas http://www.position-absolute.com</copyright>
+    <language>en-US</language>
+    <tags>jquery validation</tags>
+    <dependencies>
+      <dependency id="jQuery" version="1.8.2" />
+    </dependencies>
+  </metadata>
+</package>

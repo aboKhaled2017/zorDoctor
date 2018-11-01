@@ -1,0 +1,371 @@
+﻿@media(max-width:767px )
+{
+    #cardHead ul li {
+    font-size: 11px;
+}
+#doctor-card .base ul>li >p {
+    font-size: 10px;
+}
+ #doctor-card .base ul>li >p {
+    font-size: 10px;
+    margin-right: 0;
+}
+#commentsOnAdvice .all-comments .comments .comment-content:before{
+    content:none;
+     left: 12px;
+    top: -8px;
+    transform: rotateZ(135deg) !important;
+    -o-transform: rotateZ(135deg) !important;
+    -ms-transform: rotateZ(135deg) !important;
+    -webkit-transform: rotateZ(135deg) !important;
+    -moz-transform: rotateZ(135deg) !important;
+ }
+#commentsOnAdvice .all-comments .comments .comment-content {
+    margin:0;
+}
+#commentsOnAdvice .all-comments .comments .name {
+    margin: 1px 21px 0;
+}
+.doc-card .base ul>li.waitingTime .btn {
+    padding: 1px 5px;
+    font-size: 13px;
+}
+.doctor-profile .doc-card .doc-services {
+    padding: 5px;
+}
+#doctor-card .base .rate {
+    font-size: 6px;
+    margin-bottom: 0;
+}
+#doctor-card .base p:not(.rate) i {
+    font-size: 14px;
+    width: 8%;
+}
+#cardHead li .totalRaters, #cardHead li .rate {
+    font-size: 11px;
+}
+}
+@media (max-width: 361px) {
+/*doctor profile*/
+.doctor-profile .doc-card .doc-name,
+.doctor-profile .doc-card .doc-sp,
+.doctor-profile .doc-card .doc-addr,
+.doctor-profile .doc-card .doc-phone {
+font-size: 10px;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+margin-left: -9px;
+}
+.doctor-profile .doc-social > .container-fluid > .row > .col-xs-2 {
+padding: 0;
+}
+.all-comments .form-inline {
+margin-top: 0;
+}
+.patient-view .alert-danger{
+font-size: 11px;
+margin-bottom: 5px;
+}
+.doctor-profile .doc-card {
+width: 100%;
+}
+/*doctor profile*/
+.doctor-profile .left-part,
+.doctor-profile .doc-card {
+margin: auto;
+}
+.doctor-profile {
+padding: 0;
+}
+.doctor-profile .doc-card .doc-social .socials >a>i {
+padding: 5px;
+}
+.doctor-profile .container-fluid .row > div.col-md-8 {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+    .doctor-profile .doc-card .doc-price .price,
+    .doctor-profile .doc-card .doc-time .time {
+        font-size: 10px;
+        padding: 9px;
+    }
+.doctor-profile .doc-card .row .right {
+    padding: 8px;
+font-size: 13px;
+}
+
+.doctor-profile .doc-card .icon {
+    padding: 6px;
+font-size: 14px;
+}
+.patient-view .patients .patient .view {
+font-size: 10px;
+}
+
+.doctor-profile .doc-card .doc-services {
+padding: 16px 1px;
+}
+
+.doctor-profile .doc-card .doc-info {
+padding: 16px 16px 9px;
+}
+
+.doctor-profile .doc-card .doc-services h3,
+.doctor-profile .doc-card .doc-info h3 {
+font-size: 16px;
+}
+.patient-view .patients .patient .view > p:first-of-type {
+    width: 100%;
+}
+.patient-view .patients .patient .view > p:last-of-type {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+.patient-view hr {
+width: 100%;
+}
+
+.doctor-profile-advice .page-headline h4 {
+font-size: 15px;
+}
+.patient-view h2 {
+font-size: 14px;
+}
+.patient-view .patients .patient .patient-info .name {
+font-size: 12px;
+}
+.patient-view .patients .patient .patient-info .age,
+.patient-view .patients .patient .patient-info .address {
+font-size: 11px;
+}
+
+.doctor-profile .doc-card .head .rating > i {
+font-size: 15px;
+}
+
+.doctor-profile .doc-card .doc-services .services > div {
+font-size: 13px;
+margin: 5% 20%;
+}
+.doctor-profile .scroll-btn {
+bottom: 14%;
+}
+
+.doctor-profile .doc-card .doc-info p {
+font-size: 11px;
+line-height: 1.7;
+padding: 0 5px;
+text-align: center;
+}
+/*patient advice page*/
+.page-headline h1 {
+font-size: 17px;
+}
+
+.page-headline h4 {
+font-size: 13px;
+}
+/*patient advice page*/
+/*doctor page*/
+.doc-card .base p:not(.rate) i {
+width: 12%;
+}
+.doc-card .base .rate{
+font-size: 13px;
+}  
+.patient-view .patients .patient .patient-info .name{
+font-size: 16px;
+}
+.patient-view .patients .patient .patient-info .age, 
+.patient-view .patients .patient .patient-info .address{
+font-size: 11px;
+}  
+/*doctor page*/
+}
+@media (max-width: 767px)and (min-width: 361px){
+/*doctor profile*/
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+margin-left: -9px;
+}
+.doctor-profile .doc-card .doc-services h3, .doctor-profile .doc-card .doc-info h3{
+margin-top: 0%;
+margin-bottom: 4%;
+font-size: 16px;
+}
+.doctor-profile .doc-card .doc-time .time, .doctor-profile .doc-card .doc-price .price{
+font-size:13px;
+}
+.doctor-profile .doc-card .doc-info p {
+font-size: 12px;
+padding: 0 3px;
+text-align: left;
+}
+.doc-card .base ul>li.waitingTime>p {
+    width: 65%;
+}
+.doctor-profile .doc-card .row .left {
+    font-size: 11px;
+    padding: 13px;
+}
+.doctor-profile .left-part,
+.doctor-profile .doc-card{
+margin: auto;
+width: 95%;
+}
+.doctor-profile .doc-card .icon {
+font-size: 13px;
+}
+.doctor-profile .doc-card .doc-name, 
+.doctor-profile .doc-card .doc-sp,
+ .doctor-profile .doc-card .doc-addr, 
+.doctor-profile .doc-card .doc-phone {
+font-size: 10px;
+}
+.doctor-profile{
+padding: 0;
+margin-top: 0;
+}
+.doc-advices h3{
+font-size: 14px;
+}
+.doc-prev-advices .advices .advice{
+font-size:13px;
+width:100%;
+}
+.all-comments .form-inline {
+margin-bottom: -25px;
+}
+.patient-view h2{
+font-size: 14px;
+}
+.patient-view .patients .patient .patient-info .name{
+font-size: 14px;
+}
+.patient-view .patients .patient .patient-info .age,
+.patient-view .patients .patient .patient-info .address{
+font-size: 10px;
+}
+.patient-view .patients .patient .view{
+font-size: 11px;
+}
+.patient-view .patients .patient .view >p:first-of-type{
+width: 100%;
+}
+.patient-view .patients .patient .view >p:last-of-type{
+text-align: center;
+width: 100%;
+font-size: 10px;
+}
+.patient-view hr{
+width: 100%;
+}
+/*doctor profile*/
+/*doctor page*/
+.doc-card .base p:not(.rate) i {
+width: 11%;
+}
+.patient-view .patients .patient .patient-info .name{
+font-size: 13px;
+}
+.patient-view .patients .patient .patient-info .age, 
+.patient-view .patients .patient .patient-info .address
+{
+font-size: 13px;
+}
+/*doctor page*/
+}
+@media(min-width:768px)and (max-width:991px ){
+/*doctor profile*/
+.doctor-profile .doc-card .doc-name, 
+.doctor-profile .doc-card .doc-sp,
+ .doctor-profile .doc-card .doc-addr, 
+.doctor-profile .doc-card .doc-phone
+{
+    font-size:12px;
+}
+.doctor-profile .doc-card{
+    width:70%;
+margin: auto;
+}
+#cardHead ul li {
+    font-size: 12px;
+}
+#doctor-card .base ul>li >p {
+    font-size: 11px;
+}
+#doctor-card .base p:not(.rate) i {
+    width: 6%;
+}
+.doctor-profile{
+padding: 0 10px;
+margin-top: 0;
+}
+.doctor-profile .patient-view .patients .patient .view{
+font-size: 14px;
+}
+.doctor-profile .patient-view .patients .patient .view >p:first-of-type{
+width: 100%;
+}
+.doctor-profile .patient-view .patients .patient .view >p:last-of-type{
+text-align: center;
+width: 100%;
+}
+/*doctor page*/ 
+.patient-view .patients .patient .patient-info .name{
+font-size: 20px;
+}
+.patient-view .patients .patient .patient-info .age, 
+.patient-view .patients .patient .patient-info .address{
+font-size: 15px;
+}
+/*doctor page*/
+}
+@media(min-width:992px)and (max-width:1199px ){
+/*doctor profile*/
+.doctor-profile .doc-card{
+width: 100%;
+}
+.doctor-profile .doc-card .doc-name, 
+.doctor-profile .doc-card .doc-sp,
+.doctor-profile .doc-card .doc-addr,
+.doctor-profile .doc-card .doc-phone{
+font-size:12px;
+}
+#cardHead ul li {
+    font-size: 12px;
+}
+#doctor-card .base ul>li >p {
+    font-size: 11px;
+}
+#doctor-card .base p:not(.rate) i {
+    width: 6%;
+}
+.doctor-profile .doc-card  .head{
+font-size: 14px;
+}
+.doctor-profile .doc-card  .head p{
+margin:0;
+}
+.doctor-profile .doc-card .doc-info h3,.doctor-profile .doc-card .doc-services h3{
+font-size: 16px;
+}
+.doctor-profile .doc-card .doc-info{
+padding: 20px 18px 9px;
+}
+.doctor-profile .doc-card .doc-info p{
+font-size: 13px;
+padding: 7px;
+}
+.patient-view .patients .patient .view{
+font-size: 14px;
+}
+.patient-view .patients .patient .view >p:first-of-type{
+width: 100%;
+}
+.patient-view .patients .patient .view >p:last-of-type{
+text-align: center;
+width: 100%;
+}
+/*doctor profile*/
+}

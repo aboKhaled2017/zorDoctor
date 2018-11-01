@@ -1,0 +1,42 @@
+﻿@model string
+@{
+    ViewBag.Title = "setting";
+    Layout = "~/Areas/admin/Views/adminLayout.cshtml";
+}
+<link href="~/Content/themes/base/all.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Areas/Admin/js/jtable/jquery.jtable.min.js"></script>
+<link href="~/Areas/Admin/js/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
+<link href="~/Content/validationEngine.jquery.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.validationEngine.js"></script>
+<script src="~/Scripts/jquery.validationEngine-ar.js"></script>
+@if(Model=="city")
+{
+<script src="~/Areas/Admin/js/settingCityPage.js"></script>
+<h2 class="text-center">صفحة الاعدادات المتعلقة بالمدن والمناطق</h2>
+<div class="alert alert-warning">
+    <h3 class="text-danger">ملحوظات هامة</h3>
+    <ul>
+        <li>عند حذف محافظة او منطقة ,لاحظ انك سوف تقوم بحذف كل الاطباء الذين  لهم علاقة بهذة المخافظة</li>
+        <li>عند اضافة محافظة او منطقة تأكد من صحة البيانات المدخلة سواء بالانجليزية او بالعربية,لان هذه البيانات سوف يتم عرضها لزوار الموقع</li>
+    </ul>
+</div> 
+}
+else
+{
+<script src="~/Areas/Admin/js/settingSpecialityPage.js"></script>
+<script src="~/js/ImageTools.js"></script>
+<h2 class="text-center">صفحة الاعدادات المتعلقة بالتخصصات العامة والفرعية</h2>
+<div class="alert alert-warning">
+    <h3 class="text-danger">ملحوظات هامة</h3>
+    <ul>
+        <li>عند حذف تخصص اساسى او تخصص فرعى ,لاحظ انك سوف تقوم بحذف كل الاطباء المتواجدين فى هذا التخصص</li>
+        <li>عند اضافة تخصص  اساسى او فرعى تأكد من صحة البيانات المدخلة سواء بالانجليزية او بالعربية,لان هذه البيانات سوف يتم عرضها لزوار الموقع</li>
+    </ul>
+</div>
+}
+<div id="setting">
+
+</div>
+
+
